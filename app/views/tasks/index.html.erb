@@ -8,5 +8,6 @@
     <p><%= task.todo %></p>
     <%= link_to 'Allez voir la fiche', task_path(task) %>
     <%= link_to 'Supprimer', task_path(task), method: :delete %>
+    <%= link_to 'marker comme fait', done_task_path(task), method: :patch%>
   </div>
 <% end %>

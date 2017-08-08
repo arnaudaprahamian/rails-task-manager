@@ -37,6 +37,13 @@ class TasksController < ApplicationController
     redirect_to tasks_path
   end
 
+  def mark_as_done
+    @task = Task.find(params[:id])
+    @task.mark
+    redirect_to tasks_path
+  end
+
+
   private
 
   def task_params
