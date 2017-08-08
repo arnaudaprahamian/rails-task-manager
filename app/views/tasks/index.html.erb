@@ -3,7 +3,7 @@
 <%= link_to 'Ajouter un task', new_task_path %>
 
 <% @tasks.each do |task| %>
-  <div>
+  <div class="container text-center">
     <p><%= task.name %></p>
     <p><%= task.todo %></p>
     <%= link_to 'Allez voir la fiche', task_path(task) %>
