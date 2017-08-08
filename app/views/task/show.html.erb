@@ -1,0 +1,6 @@
+<h1>Tache en cours: <%= @task.name %></h1>
+
+<p>La task a faire : <%= @task.content %></p>
+<%= link_to 'Editer la task', edit_task_path(@task) %>
+
+<%= link_to 'Retour a la liste', tasks_path %>

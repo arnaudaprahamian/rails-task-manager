@@ -1,0 +1,7 @@
+<h1>Ajouter un task</h1>
+
+<%= form_for @task do |f| %>
+  <%= f.text_field :name %>
+  <%= f.number_field :content %>
+  <%= f.submit 'Editer le restaurant' %>
+<% end %>
